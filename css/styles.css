@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.image-container {
+    position: relative; /* Create a positioning context for the title */
+}
+
+.background-image {
+    width: 100%; /* Fill the width of the screen */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent extra space below the image */
+}
+
+.title-container {
+    display: flex; /* Use flexbox for horizontal alignment */
+    align-items: center; /* Align items in the center */
+    flex-direction: row; /* Stack the titles horizontally */
+    position: absolute; /* Position it over the image */
+    top: 5%; /* Move higher up */
+    left: 50%; /* Center the title container */
+    transform: translateX(-50%); /* Adjust for centering */
+    z-index: 1; /* Ensure it appears above the image */
+    text-align: center; /* Center align text */
+}
+
+.title {
+    color: white; /* White text color */
+    font-size: 6rem; /* Adjust the font size */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    font-weight: 300; /* Use a thin font weight */
+    text-transform: uppercase; /* Convert to capital letters */
+    margin-bottom: 20px; /* Increased space below the title */
+}
+
+.title-container .title:first-child {
+    margin-right: 20px; /* Adjust the spacing between words */
+}
+
+.description {
+    color: white; /* White text color */
+    font-size: 1.5rem; /* Font size for the description */
+    max-width: 480px; /* Limit the width of the description */
+    font-family: 'Roboto', sans-serif; /* Use Roboto font for description */
+    margin-top: 40px; /* Space between the title and paragraph */
+    position: absolute; /* Positioning context */
+    top: 13%; /* Adjust top position to create more space between title and paragraph */
+    left: 27%; /* Leften the description */
+    transform: translateX(-50%); /* Adjust for centering */
+}
+
+/* Image gallery styles */
+.image-gallery {
+    position: absolute; /* Position it absolutely */
+    bottom: 3%; /* Move it further down */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: space-between; /* Space the images evenly */
+    width: 90%; /* Use 80% of the image width for the gallery */
+    z-index: 2; /* Ensure it appears above the image */
+}
+
+.image-item {
+    text-align: center; /* Center the text under each image */
+}
+
+.image-item img {
+    width: 300px; /* Set the image width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Adjust the value for more or less roundness */
+}
+
+.image-title {
+    color: white; /* White text color */
+    text-transform: uppercase; /* Convert to capital letters */
+    margin-top: 10px; /* Space between the image and title */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    font-weight: 400; /* Normal weight for this font */
+}
+
+/* Remove the underline from links */
+.image-item a {
+    text-decoration: none; /* Remove the underline from links */
+}
+
+.footer-space {
+    background-color: rgba(51, 28, 38, 255); /* Set the background color */
+    height: 100px; /* Set a specific height for the footer space */
+    text-align: center; /* Center align text */
+    padding: 20px 0; /* Space above and below copyright */
+}
+
+.copyright {
+    color: white; /* White text color for copyright */
+    font-size: 1rem; /* Font size for copyright */
+    padding: 20px; /* Add some padding for spacing */
+}

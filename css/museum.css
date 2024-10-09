@@ -1,0 +1,132 @@
+/* General styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #8b3a4a; /* Burgundy background */
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    font-size: 4em;
+    font-weight: 100;
+}
+
+nav a {
+    font-size: 1.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 100px;
+}
+
+/* Intro section */
+.intro {
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+}
+
+/* Museums Section */
+.museum {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.museum-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.museum-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.museum-item h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.museum-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.museum-item a:hover {
+    text-decoration: underline;
+}
+
+/* Footer and Image Gallery */
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Image gallery styles */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto; /* Center the gallery */
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Make images clickable */
+.gallery a {
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+}
+
+.links a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none; /* Remove underline */
+    font-weight: 400;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright directly under the images */
+.copyright {
+    color: white;
+    font-size: 1rem;
+    padding-top: 20px;
+}
